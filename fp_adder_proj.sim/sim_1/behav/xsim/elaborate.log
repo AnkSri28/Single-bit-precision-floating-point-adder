@@ -1,0 +1,11 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto d97f0f998a494edca18822fcbc0b7c7f --incr --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L axis_protocol_checker_v1_2_3 -L xil_defaultlib -L axi4stream_vip_v1_1_3 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fp_adder_behav xil_defaultlib.tb_fp_adder xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-51] xil_axi4stream_unit is an unknown type [/home/in_ankith/project/fp_adder_proj/fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv:104]
+ERROR: [VRFC 10-51] xil_axi4stream_unit is an unknown type [/home/in_ankith/project/fp_adder_proj/fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv:105]
+ERROR: [VRFC 10-2063] Module <axi4stream_vip_mst32> not found while processing module instance <U_axi4strream_vip_mst_a> [/home/in_ankith/project/fp_adder_proj/fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv:108]
+ERROR: [VRFC 10-2063] Module <axi4stream_vip_slv32> not found while processing module instance <U_axi4strream_vip_slv> [/home/in_ankith/project/fp_adder_proj/fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv:124]
+ERROR: [VRFC 10-2063] Module <fp_adder> not found while processing module instance <U_fp_adder> [/home/in_ankith/project/fp_adder_proj/fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv:133]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

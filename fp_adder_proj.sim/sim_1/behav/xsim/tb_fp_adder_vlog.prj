@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../fp_adder_proj.ip_user_files/ipstatic/hdl" --include "/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"../../../../fp_adder_proj.srcs/sources_1/ip/axi4stream_vip_slv32/sim/axi4stream_vip_slv32_pkg.sv" \
+"../../../../fp_adder_proj.srcs/sources_1/ip/axi4stream_vip_slv32/sim/axi4stream_vip_slv32.sv" \
+"../../../../fp_adder_proj.srcs/sources_1/ip/axi4stream_vip_mst32/sim/axi4stream_vip_mst32_pkg.sv" \
+"../../../../fp_adder_proj.srcs/sources_1/ip/axi4stream_vip_mst32/sim/axi4stream_vip_mst32.sv" \
+"../../../../fp_adder_proj.srcs/sources_1/new/fp_adder.sv" \
+"../../../../fp_adder_proj.srcs/sim_1/new/tb_fp_adder.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
